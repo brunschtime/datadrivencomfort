@@ -24,7 +24,8 @@ img, svg {
 main {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
+  /* Reduced gap between sections */
 }
 
 .container {
@@ -94,11 +95,12 @@ p {
 }
 
 footer {
-  background-color: #0f172a;
-  color: #94a3b8;
-  text-align: center;
-  padding: 2rem 1rem;
-  font-size: 0.875rem;
+    background-color: #1f2937;  /* Darker background for footer */
+    color: #ffffff;  /* White text color */
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.875rem;
+    margin-top: 2rem; /* Ensures footer isn't too close to the content */
 }
 
 .grid {
@@ -131,32 +133,42 @@ footer {
   transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1);
 }
+
+/* Markdown Specific Styles */
 .markdown-page h1 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .markdown-page h2 {
   font-size: 1.5rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .markdown-page p {
-  margin-bottom: 1.25rem;
-  line-height: 1.7;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
   color: var(--color-muted);
 }
 
 .markdown-page ul {
-  margin-left: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-left: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .markdown-page li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   list-style-type: disc;
 }
+
+.markdown-page {
+  background-color: #f9fafb;
+  padding: 1.25rem 1rem;
+  border-radius: 0.375rem;
+}
+
 .hero.compact {
   padding: 2rem 1rem 1rem;
   background-color: #f8fafc;
