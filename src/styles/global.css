@@ -1,35 +1,77 @@
 :root {
-    --bg: #fff;
-    --text: #111;
-    --accent: #2563eb;
-    --accent-light: #ebf4ff;
+    --color-primary: #003366;
+    --color-accent: #007acc;
+    --color-background: #ffffff;
+    --color-dark: #111;
   }
   
   body {
     margin: 0;
     font-family: system-ui, sans-serif;
-    background-color: var(--bg);
-    color: var(--text);
+    background: var(--color-background);
+    color: var(--color-dark);
     line-height: 1.6;
   }
   
-  a {
-    color: var(--accent);
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  header, footer {
-    background: var(--accent-light);
-    padding: 1rem;
+  main {
+    display: flex;
+    flex-direction: column;
   }
   
   .container {
+    width: 90%;
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 2rem 0;
+  }
+  
+  .hero {
+    background: linear-gradient(to right, var(--color-primary), var(--color-accent));
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.125rem;
+  }
+  
+  .button {
+    display: inline-block;
+    background: white;
+    color: var(--color-primary);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+  }
+  
+  .services {
+    background: #f9f9f9;
+  }
+  
+  .services .grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  
+  .card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 0.875rem;
+    background: #eee;
+    padding: 2rem 0;
   }
   
