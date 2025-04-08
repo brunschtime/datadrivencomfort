@@ -1,82 +1,52 @@
 ---
-import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Independent HVAC sizing and consulting using real-world data." />
-    <meta name="theme-color" content="#0f172a" />
-    <meta property="og:title" content="Data Driven Comfort" />
-    <meta property="og:description" content="Smarter HVAC decisions using data-driven insights and Manual J reports." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://datadrivencomfort.com" />
-    <title>Data Driven Comfort — Smarter HVAC Starts with the Right Data</title>
+<BaseLayout>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Smarter HVAC Starts with the Right Data</h1>
+        <p>
+          Data Driven Comfort helps homeowners, builders, and consultants make accurate decisions
+          about HVAC sizing, energy efficiency, and comfort — using data-backed insights and real-world modeling.
+        </p>
+        <a href="mailto:hello@datadrivencomfort.com" class="button" role="button" aria-label="Request a consultation">Request a Consultation</a>
+      </div>
+    </section>
 
-    <!-- Font Optimization: Preload and matching fallbacks -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" as="style" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" media="all" crossorigin="anonymous" />
-
-    <!-- Favicon -->
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-
-    <style>
-      html {
-        scroll-behavior: smooth;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-rendering: optimizeLegibility;
-        font-synthesis: none;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <h1>Smarter HVAC Starts with the Right Data</h1>
-          <p>
-            Data Driven Comfort helps homeowners, builders, and consultants make accurate decisions
-            about HVAC sizing, energy efficiency, and comfort — using data-backed insights and real-world modeling.
-          </p>
-          <a href="mailto:hello@datadrivencomfort.com" class="button" role="button" aria-label="Request a consultation">Request a Consultation</a>
-        </div>
-      </section>
-
-      <section class="services">
-        <div class="container">
-          <h2>What We Do</h2>
-          <div class="grid">
-            <div class="card">
-              <h3>Manual J Reports</h3>
-              <p>Precise HVAC load calculations tailored to your exact home specs — no guesswork.</p>
-            </div>
-            <div class="card">
-              <h3>Right-Sizing Guidance</h3>
-              <p>We match your home to the perfect equipment size to reduce energy use and increase comfort.</p>
-            </div>
-            <div class="card">
-              <h3>Independent Consulting</h3>
-              <p>No upsells. No bias. Just clear reports and smart answers to help you invest wisely.</p>
-            </div>
+    <section class="services">
+      <div class="container">
+        <h2>What We Do</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Manual J Reports</h3>
+            <p>Precise HVAC load calculations tailored to your exact home specs — no guesswork.</p>
+          </div>
+          <div class="card">
+            <h3>Right-Sizing Guidance</h3>
+            <p>We match your home to the perfect equipment size to reduce energy use and increase comfort.</p>
+          </div>
+          <div class="card">
+            <h3>Independent Consulting</h3>
+            <p>No upsells. No bias. Just clear reports and smart answers to help you invest wisely.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="contact" id="contact">
-        <div class="container">
-          <h2>Let's Talk</h2>
-          <p>Have a project or just a question? Send us a message and we’ll get right back to you.</p>
-          <a href="mailto:hello@datadrivencomfort.com" class="button" role="button" aria-label="Send email to Data Driven Comfort">Email Us</a>
-        </div>
-      </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Let's Talk</h2>
+        <p>Have a project or just a question? Send us a message and we’ll get right back to you.</p>
+        <a href="mailto:hello@datadrivencomfort.com" class="button" role="button" aria-label="Send email to Data Driven Comfort">Email Us</a>
+      </div>
+    </section>
 
-      <footer>
-        <div class="container">
-          <p>&copy; 2025 Data Driven Comfort. All rights reserved.</p>
-        </div>
-      </footer>
-    </main>
-  </body>
-</html>
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Data Driven Comfort. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+</BaseLayout>
