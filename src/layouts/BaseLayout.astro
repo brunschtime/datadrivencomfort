@@ -23,15 +23,13 @@ const { children } = Astro.props;
   </head>
 
   <body>
-    <header style="border-bottom: 1px solid #e2e8f0; background-color: #ffffff;">
-        <link rel="manifest" href="/manifest.json">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
-        <a href="/" style="font-size: 1.25rem; font-weight: 600; color: var(--color-text); text-decoration: none;">
-          Data Driven Comfort
-        </a>
-        <nav style="display: flex; gap: 1.5rem; font-size: 0.95rem;">
-          <a href="/" style="color: var(--color-text); text-decoration: none;">Home</a>
-          <a href="/manual-j" style="color: var(--color-text); text-decoration: none;">Manual J</a>
+    <header class="header">
+      <link rel="manifest" href="/manifest.json">
+      <div class="container">
+        <a href="/" class="logo">Data Driven Comfort</a>
+        <nav class="navigation">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/manual-j" class="nav-link">Manual J</a>
         </nav>
       </div>
     </header>

@@ -76,6 +76,38 @@ p {
   background-color: #1d4ed8;
 }
 
+/* Header Styles */
+.header {
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #ffffff;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 50px; /* Ensure at least 50px padding on left and right */
+  box-sizing: border-box;
+}
+
+.header .logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.header .navigation {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.header .nav-link {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
 /* Sections */
 .hero {
   background-color: #f8fafc;
@@ -95,12 +127,12 @@ p {
 }
 
 footer {
-    background-color: #1f2937;  /* Darker background for footer */
-    color: #ffffff;  /* White text color */
-    text-align: center;
-    padding: 2rem 1rem;
-    font-size: 0.875rem;
-    margin-top: 2rem; /* Ensures footer isn't too close to the content */
+  background-color: #1f2937; /* Darker background for footer */
+  color: #ffffff; /* White text color */
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.875rem;
+  margin-top: 2rem; /* Ensures footer isn't too close to the content */
 }
 
 .grid {
@@ -180,4 +212,12 @@ footer {
   margin: 0 auto;
   max-width: 750px;
   text-align: center;
+}
+
+/* Ensure mobile responsiveness */
+@media (max-width: 768px) {
+  .header .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
