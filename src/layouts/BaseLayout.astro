@@ -19,11 +19,13 @@ const { children } = Astro.props;
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" media="all" crossorigin="anonymous" />
     <!-- Favicon -->
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script type="module" src="/scripts/register-service-worker.js"></script>
   </head>
 
   <body>
     <header style="border-bottom: 1px solid #e2e8f0; background-color: #ffffff;">
-      <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
+        <link rel="manifest" href="/manifest.json">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
         <a href="/" style="font-size: 1.25rem; font-weight: 600; color: var(--color-text); text-decoration: none;">
           Data Driven Comfort
         </a>
